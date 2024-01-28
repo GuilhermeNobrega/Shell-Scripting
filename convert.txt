@@ -1,0 +1,1 @@
+Para converter, use o comando convert nome_arquivo.jpg nome_arquivo_extensao_desejada
