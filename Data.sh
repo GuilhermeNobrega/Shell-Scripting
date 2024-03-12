@@ -12,7 +12,7 @@ then
     echo "Today is tuesday"
 fi
 
-#other metod
+#Other method
 
 #!/bin/bash 
 data=$(date)
@@ -30,4 +30,20 @@ then
     echo "Today is tuesday"
 fi
 
-#
+# Other method
+
+#!/bin/bash 
+data=$(date)
+values=()
+#echo "${arry[*]}"
+for results in $data
+do  
+    values+=("$results")
+done
+echo "${values[*]}"
+echo "Finished loop for..."
+sleep 1
+if [[ "${values[*]}" =~ "Tue" ]];
+then
+    echo "Today is tuesday"
+fi
