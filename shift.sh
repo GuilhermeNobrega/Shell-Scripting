@@ -34,6 +34,10 @@ do
     echo "$count e $token"
 done
 
+count=2
+var2="Hello, world!"
+token="${!count}"
+echo "$token"  # Isso imprimirá: Hello, world!
 
 count=0
 number=$#
