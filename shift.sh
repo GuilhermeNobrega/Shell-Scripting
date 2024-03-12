@@ -47,3 +47,7 @@ done
 
 echo "$count"  # Agora, $count deve ter o valor correto
 
+ uma expansao da variável indireta
+
+ Não necessariamente. A expansão de variável indireta ${!nome_da_variável} não exige que os nomes das variáveis sejam parecidos.
+ O que importa é que o valor da variável usada dentro do ${!...} corresponda ao nome de outra variável existente.
