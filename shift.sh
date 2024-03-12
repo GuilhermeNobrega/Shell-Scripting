@@ -33,3 +33,17 @@ do
     shift
     echo "$count e $token"
 done
+
+
+count=0
+number=$#
+
+while [ $count -lt $number ]
+do
+    ((count++))  # Atualiza count corretamente
+    token="${!count}"  # Usando ${!count} para obter o valor da variável indireta
+    shift
+done
+
+echo "$count"  # Agora, $count deve ter o valor correto
+
