@@ -20,3 +20,16 @@ bash shift.sh 8 2 4 5
 
 8 + 2 + 4 + 5 = 19
 '
+#ou..
+
+#!/bin/bash
+
+count=0
+number=$#
+while [ $count -lt $number ]
+do
+    ((count++))
+    token="$"$count
+    shift
+    echo "$count e $token"
+done
