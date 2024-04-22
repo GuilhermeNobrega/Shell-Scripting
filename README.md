@@ -25,5 +25,5 @@ bash -x nome_do_seu_script.sh
 ## Documentação
 
 <a href="https://github.com/koalaman/shellcheck/">
-    <button>Github Documentation</button>
+    <button>Shellcheck Documentation</button>
   </a> 
