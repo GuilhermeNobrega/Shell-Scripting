@@ -19,3 +19,11 @@ echo "$random"
 #O tamanho do intervalo é $p1 - $p2 + 1 = 10 - 5 + 1 = 6.
 #O cálculo $RANDOM % 6 gera um número aleatório entre 0 e 5 (inclusive).
 #Então, random = 5 + (número aleatório entre 0 e 5), que dá um número aleatório entre 5 e 10 (inclusive).
+
+#=================================================== MORE SIMPLE =================================================
+
+#!/bin/bash
+
+read -p "Type the max value, to select a random value: " max
+random=$(( $RANDOM % $max +1 ))
+echo "Your random value is: $random"
