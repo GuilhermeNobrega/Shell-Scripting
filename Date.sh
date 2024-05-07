@@ -11,3 +11,13 @@ diff=$(( epoch2 - epoch1 ))
 
 # Mostrar a diferença (em segundos)
 echo "Diferença entre as datas (em segundos): $diff"
+
+
+# Data e hora no formato ISO 8601
+iso_date_time="2024-05-07T13:00:43Z"
+
+# Converter a data e hora para o fuso horário local brasileiro
+converted_date_time=$(date -d "$iso_date_time" +"%Y-%m-%d %H:%M:%S")
+
+# Exibir a data e hora convertidas
+echo "Data e hora convertidas para o fuso horário brasileiro: $converted_date_time"
