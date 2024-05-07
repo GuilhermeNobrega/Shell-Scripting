@@ -21,3 +21,13 @@ converted_date_time=$(date -d "$iso_date_time" +"%Y-%m-%d %H:%M:%S")
 
 # Exibir a data e hora convertidas
 echo "Data e hora convertidas para o fuso horário brasileiro: $converted_date_time"
+
+
+
+date_iso="2024-05-06T14:30:43Z"
+
+# Remover 'T' e 'Z' para formatar a data
+date_formatted=$(echo "$date_iso" | sed 's/T/ /; s/Z//')
+
+# Exibir a data formatada
+echo $date_formatted
