@@ -36,3 +36,13 @@ pid: O ID do processo.
 comm: O nome do comando ou programa em execução.
 %cpu: O uso percentual da CPU por esse processo.
 %mem: O uso percentual de memória por esse processo.
+
+
+
+#Nome de processo em cima data embaixo
+for pid in $comand
+do
+  nome_processo=$( ps -p $pid -o comm= )
+  echo "$nome_processo"
+  echo $( date +%F,%H:%M:%S, )
+done
