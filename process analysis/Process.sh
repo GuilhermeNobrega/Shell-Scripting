@@ -25,3 +25,11 @@ do
 done
 
 echo -e "========================================================="
+
+
+#ps -o pid,comm,%cpu,%mem
+
+pid: O ID do processo.
+comm: O nome do comando ou programa em execução.
+%cpu: O uso percentual da CPU por esse processo.
+%mem: O uso percentual de memória por esse processo.
