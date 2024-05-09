@@ -15,7 +15,7 @@ EOF
 
 
 #read -p "Deseja ver quantos processos?: " processos
-
+#grep servindo para pegar apenas valores númericos, entre 0-9
 comand=$( ps -e -o pid --sort -size | head -n 11 | grep [0-9] )
 #echo -e "$comand\n"
 
